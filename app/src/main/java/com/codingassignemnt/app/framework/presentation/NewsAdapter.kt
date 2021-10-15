@@ -1,4 +1,4 @@
-package com.codingassignemnt.app.ui
+package com.codingassignemnt.app.framework.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,12 +8,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.codingassignemnt.app.R
+import com.codingassignemnt.app.business.domain.bean.Article
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
 class NewsAdapter(
-    private var newsItems: List<NewsUiModel>,
+    private var newsItems: List<Article>,
     private val listener: OnNewsArticleClicked
 ) :
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
@@ -60,7 +61,7 @@ class NewsAdapter(
         else VIEW_TYPE_REGULAR
     }
 
-    fun setItems(items: List<NewsUiModel>) {
+    fun setItems(items: List<Article>) {
         newsItems = items
     }
 
@@ -76,7 +77,7 @@ class NewsAdapter(
 
 
     interface OnNewsArticleClicked {
-        fun onNewsItemClicked(newsItem: NewsUiModel)
+        fun onNewsItemClicked(article: Article)
     }
 
     companion object {

@@ -1,4 +1,4 @@
-package com.codingassignemnt.app.ui
+package com.codingassignemnt.app.framework.presentation
 
 import android.app.Activity
 import android.os.Bundle

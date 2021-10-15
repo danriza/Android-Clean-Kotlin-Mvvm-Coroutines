@@ -1,6 +1,7 @@
-package com.codingassignemnt.app.ui
+package com.codingassignemnt.app.business.domain.bean
 
-data class NewsUiModel(
+class Article (
+    val id: String?,
     val title: String?,
     val description: String?,
     val imageUrl: String?,

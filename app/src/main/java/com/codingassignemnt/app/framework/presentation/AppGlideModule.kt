@@ -1,10 +1,10 @@
-package com.codingassignemnt.app.domain.util
+package com.codingassignemnt.app.framework.presentation
 
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
 
 // new since Glide v4
 @GlideModule
-class MyAppGlideModule : AppGlideModule() {
+class AppGlideModule : AppGlideModule() {
     // leave empty for now
 }
